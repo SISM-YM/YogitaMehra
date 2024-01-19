@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Malaysia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(lightblue, darkblue);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2sem;
+            margin: 0;
+            color:#ff0908;
+            align:center;
+        }
+
+         section {
+            
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px;
+
+        }
+
+        .content {
+           
+            max-width: 600px;
+            display:inline-block;
+
+        }
+
+        h2 {
+            font-size: 1em;
+            color: #e44d26;
+        }
+        .destination {
+
+            padding: 30px;
+            color: #000;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1; 
+        }
+    
+    
+        .destination:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .front {
+            transform: rotateY(0deg);
+            z-index: 1;
+            background-color: #fff;
+            margin: 10px; /* Added margin for separation */
+        }
+
+        .back {
+            transform: rotateY(180deg);
+            z-index: 0;
+            background-color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e44d26;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1.2em;
+        }
+
+        .cta-button:hover {
+            background-color: #d33980;
+        }
+
+        .slideshow {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 100%; /* Set the width to 100% of its container */
+            max-height: 250px; /* Set the maximum height */
+            max-width:600px;
+            margin-top: 20px; /* Optional: Add margin for spacing */
+            display:inline-block;
+
+        }
+
+        .slide-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 80%;
+            border-radius: 3px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+
+         @media (max-width: 768px) {
+            section {
+                grid-template-columns: 1fr; /* Single column for smaller screens */
+            }
+
+            .content, .destination {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel to Malaysia</h1><br>
+         <div class="slideshow">
+            <div class="slide-container">
+                <div class="slide"><img src="malaysia1.jpg" alt="Malaysia 1"></div>
+                <div class="slide"><img src="malaysia2.jpg" alt="Malaysia 2"></div>
+                <div class="slide"><img src="malaysia3.jpg" alt="Malaysia 3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+            <h1>Discover the Beauty of Malaysia</h1>
+            <p>Malaysia is a diverse country known for its stunning landscapes, rich culture, and warm hospitality. Explore the wonders that Malaysia has to offer!</p>
+
+            <h1>Must-Visit Attractions</h1>
+             <div class="content">
+                <div class="destination">
+                    <div class="card">
+                    <div class="front">
+                        <img src="image1.jpg" alt="Petronas Towers">
+                        <h2>Petronas Towers</h2>
+                    </div>
+                    <div class="back">
+                        <p>Explore the iconic Petronas Towers, the symbol of Kuala Lumpur. These twin towers offer breathtaking views of the city.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <div class="card">
+                    <div class="front">
+                        <img src="image2.jpg" alt="Petronas Towers">
+                        <h2>Lankavi</h2>
+                    </div>
+                    <div class="back">
+                        <p>Discover the natural beauty of Langkawi, a stunning archipelago with pristine beaches, lush forests, and vibrant wildlife.</p>
+                    </div>
+                    </div>
+                </div>
+                 <div class="destination">
+                    <div class="card">
+                    <div class="front">
+                        <img src="image4.jpg" alt="Petronas Towers">
+                        <h2>Taman Negara National Park</h2>
+                    </div>
+                    <div class="back">
+                        <p>Immerse yourself in the oldest rainforest at Taman Negara National Park. Experience canopy walks, river cruises, and diverse wildlife.</p>
+                    </div>  
+                     </div>
+                </div> 
+                <div class="destination">
+                    <div class="card">
+                    <div class="front">
+                        <img src="image3.jpg" alt="Petronas Towers">
+                        <h2>Penang Street Art</h2>
+                    </div>
+                    <div class="back">
+                        <p>Wander through the streets of Penang to admire the captivating street art. Each mural tells a unique story about Penang's rich history and culture.</p>
+                    </div> 
+                     </div>
+                </div>
+             
+            </div>
+            <h1>Experience the Culture</h1>
+            <ul>
+                <li>Try Delicious Malaysian Cuisine</li>
+                <li>Attend Cultural Festivals</li>
+                <li>Visit Historical Temples and Mosques</li>
+            </ul>
+
+            <a href="#" class="cta-button">Start Your Journey</a>
+        
+
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Travel to Malaysia. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the image slideshow
+        const slideContainer = document.querySelector('.slide-container');
+        let slideIndex = 0;
+
+        function showSlides() {
+            slideIndex++;
+            if (slideIndex >= 3) {
+                slideIndex = 0;
+            }
+            slideContainer.style.transform = `translateX(${-slideIndex * 100}%)`;
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
